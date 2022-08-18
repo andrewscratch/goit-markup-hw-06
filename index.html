@@ -477,15 +477,15 @@
         <form class="modal-form">
           <label class="label-text">
             Ім'я
-            <input type="text" class="form-input" name="user-name" />
+            <input type="text" class="form-input" name="user-name" required />
           </label>
           <label class="label-text">
             Телефон
-            <input type="tel" class="form-input" name="user-tel" />
+            <input type="tel" class="form-input" name="user-tel" required />
           </label>
           <label class="label-text">
             Пошта
-            <input type="email" class="form-input" name="user-email" />
+            <input type="email" class="form-input" name="user-email" required />
           </label>
           <label class="label-text">
             Коментар
@@ -496,10 +496,10 @@
               placeholder="Введіть текст"
             ></textarea>
           </label>
-          <span class="label-text">
+          <div class="label-text">
             Погоджуюся з розсилкою та приймаю
-            <a class="condition" href="">Умови договору</a></span
-          >
+            <a class="condition" href="">Умови договору</a>
+          </div>
           <button type="submit" class="submit-button button">Відправити</button>
         </form>
       </div>
