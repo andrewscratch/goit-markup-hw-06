@@ -660,8 +660,8 @@ ul {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  padding-bottom: 40px;
+  color: #2121 21;
+  margin-bottom: 12px;
 }
 
 .form-input {
@@ -669,9 +669,30 @@ ul {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 28px;
   padding-left: 42px;
   margin-top: 4px;
+}
+
+.form-input:focus {
+  color: var(--accent-color);
+}
+
+.form-input:focus + .input-icon {
+  fill: #2196f3;
+}
+
+.input-field {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .label-text {
@@ -680,11 +701,8 @@ ul {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  /* identical to box height */
   letter-spacing: 0.01em;
   color: #757575;
-  margin-bottom: 30px;
-  margin-top: 20px;
 }
 
 .backdrop.is-hidden .modal {
@@ -697,6 +715,8 @@ ul {
   height: 120px;
   resize: none;
   margin-top: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
 }
 
 .modal-close {
@@ -720,6 +740,35 @@ ul {
   pointer-events: none;
 }
 
+.modal-text {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #757575;
+  border-radius: 4px;
+  resize: none;
+  padding: 16px;
+}
+
+.check-text {
+  font-size: 16px;
+  color: #757575;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #090b13;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 300ms linear;
+}
+
+.check-icon {
+  fill: transparent;
+}
 .submit-button {
   font-weight: 700;
   line-height: 1.88;
