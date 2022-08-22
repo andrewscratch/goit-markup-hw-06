@@ -858,6 +858,7 @@ ul {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill var(--timing) var(--cubic);
 }
 
 .input-check {
@@ -950,6 +951,10 @@ ul {
   border-color: var(--accent-color);
 }
 
+.form-input {
+  transition: color var(--timing) var(--cubic);
+}
+
 .form-text::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -976,8 +981,6 @@ ul {
   margin-right: 5px;
   display: flex;
   align-items: center;
-
-  justify-content: space-between;
   transition: background-color 250ms linear, border-color 250ms linear;
 }
 
