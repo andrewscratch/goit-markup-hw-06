@@ -918,6 +918,10 @@ ul {
   cursor: pointer;
 }
 
+.modal-close:hover {
+  fill: var(--hover-color);
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
